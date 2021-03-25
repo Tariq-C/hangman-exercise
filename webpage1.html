@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="style.css">
+    <!-- This is the game header and sub-header -->
+    <h1 id="title">Hangman Game (HTML/JS Exercise)</h1>
+    <p id="subtitle">This is a game made through HTML and JS to replicate hangman, the word guessing game.</p>
+
+    <!-- Game Start Button -->
+    <button type="button" id="start" name="StartGame" onclick="start()">Start Game</button>
+
+
+    <!-- Letter Type Field -->
+    <input type="text" name="letter" class="play" id="letter" rows="1" cols="1" hidden></textarea>
+    <br>
+    <!-- Buttons to play and restart -->
+    <button type="button" class="play" id="guess" name="button" onclick="guess()" hidden>Check Letter</button>
+    <button type="button" id="restart" name="reset" onclick="restart()" hidden>Start A New Game</button>
+    <br>
+    <!-- Text fields for the end game message and the temp test word visualisation -->
+    <p class="end" id="endmessage"></p>
+    <p class="play"id="word"></p>
+    <!-- Visualisation of the guessing and letters -->
+    <h2 id="visual"></h2>
+
+    <!-- The images for the hangman game -->
+    <img id="6lives" class="img" alt="6 lives remaining" src="0.jpg" >
+    <img id="5lives" class="img" alt="5 lives remaining" src="1.jpg" hidden>
+    <img id="4lives" class="img" alt="4 lives remaining" src="2.jpg" hidden>
+    <img id="3lives" class="img" alt="3 lives remaining" src="3.jpg" hidden>
+    <img id="2lives" class="img" alt="2 lives remaining" src="4.jpg" hidden>
+    <img id="1lives" class="img" alt="1 lives remaining" src="5.jpg" hidden>
+    <img id="0lives" class="img" alt="0 lives remaining" src="6.jpg" hidden>
+
+
+
+
+    <script src="script1.js" charset="utf-8"></script>
+  </body>
+
+</html>
